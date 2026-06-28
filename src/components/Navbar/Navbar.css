@@ -31,12 +31,13 @@ nav ul li:hover{
   nav{
     flex-direction: column;
     padding: 20px;
+  
   }
 
   nav ul{
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 80px;
     margin-top: 15px;
   }
 }
