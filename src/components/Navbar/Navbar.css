@@ -24,3 +24,19 @@ nav ul li{
 nav ul li:hover{
   color:#38bdf8
 }
+
+/* mobile css */
+
+@media(max-width:768px){
+  nav{
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  nav ul{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+}

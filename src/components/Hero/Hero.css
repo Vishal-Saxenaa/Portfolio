@@ -3,7 +3,7 @@
   justify-content:space-between;
   align-items: center;
   min-height: 90vh;
-  padding: 80px 60px;
+  padding: 80px 40px;
 }
 
 .hero-left{
@@ -11,7 +11,7 @@
 }
 
 .hero-right{
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: center;
 }
@@ -47,6 +47,7 @@
   line-height: 1.7;
   margin-bottom: 30px;
   color: #cbd5e1;
+  text-align: justify;
 }
 
 .hero-buttons{
@@ -83,13 +84,50 @@
   transform: translateY(-4px);
   box-shadow: 0 0 20px #38bdf8;
 }
-/* 
-.hero button{
-  padding: 12px 28px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  background: #38bdf8;
-  color: white;
-} */
+
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+  .hero{
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .hero-left{
+    width: 1005;
+  }
+
+  .hero-right{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+ 
+  .hero-right img{
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero h1{
+    font-size: 26px;
+  }
+
+  .hero h2{
+    font-size: 13px;
+  }
+
+  .hero p{
+    font-size: 16px;
+    text-align: center;
+    text-align: justify;
+  }
+
+  .hero-buttons{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary, .btn-secondary{
+    width: 220px;
+  }
+}
