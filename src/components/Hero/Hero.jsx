@@ -1,0 +1,33 @@
+import "./Hero.css";
+import profile from "../../assets/images/profile.png";
+
+function Hero() {
+  return( 
+    <section className="hero">
+
+      <div className = "hero-left">
+        
+        <h1>Hi, I'm Vishal Saxena 👋 </h1>
+
+        <h2>Computer Instructor | Java Full Stack Developer</h2>
+
+        <p>Passionate Computer Instructor with knowlegde of JAVA, React, HTML, CSS and JavaScript. I enjoy buildiing modern web applications and continuously learninng new technologies.</p>
+
+        <div className="hero-buttons">
+          <button className="btn-primary">Hire Me</button>
+          <button className="btn-secondary">Download Resume</button>
+          
+        </div>
+      
+      
+      </div>
+
+      <div className="hero-right"> 
+        <img src= {profile} alt = "Vishal Saxena" />
+      </div>
+    
+    </section>
+  );
+}
+
+export default Hero;
