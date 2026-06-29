@@ -28,7 +28,7 @@ function Hero() {
           <FaLinkedin/>
         </a>
 
-        <a href="mailto :saxenaji789@gmail.com">
+        <a href="#">
         <FaEnvelope/>
         </a>
 
