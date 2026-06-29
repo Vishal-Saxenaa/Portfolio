@@ -27,11 +27,11 @@ function Hero() {
         <FaGithub/>
         </a>
 
-        <a href="#" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/vishal-saxena-310017207/" target="_blank" rel="noreferrer">
           <FaLinkedin/>
         </a>
 
-        <a href="#" target="_blank" rel="noreferrer">
+        <a href="mailto:saxenaji789@gmail.com">
         <FaEnvelope/>
         </a>
 
