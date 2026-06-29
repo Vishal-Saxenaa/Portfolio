@@ -1,5 +1,6 @@
 import "./Hero.css";
 import profile from "../../assets/images/profile.png";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function Hero() {
   return( 
@@ -18,7 +19,21 @@ function Hero() {
           <button className="btn-secondary">Download Resume</button>
           
         </div>
-      
+       <div className="social-icons">
+        <a href="https://github.com/Vishal-Saxenaa" target="_blank" rel="noneferrer">
+        <FaGithub/>
+        </a>
+
+        <a href="#" target="_blank" rel="noreferrer">
+          <FaLinkedin/>
+        </a>
+
+        <a href="mailto :saxenaji789@gmail.com">
+        <FaEnvelope/>
+        </a>
+
+
+       </div>
       
       </div>
 
