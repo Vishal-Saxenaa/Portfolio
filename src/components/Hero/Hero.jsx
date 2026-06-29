@@ -20,7 +20,10 @@ function Hero() {
           
         </div>
        <div className="social-icons">
-        <a href="https://github.com/Vishal-Saxenaa" target="_blank" rel="noneferrer">
+        <a href="https://github.com/Vishal-Saxenaa" 
+        target="_blank" 
+        rel="noreferrer"
+        >
         <FaGithub/>
         </a>
 
@@ -28,7 +31,7 @@ function Hero() {
           <FaLinkedin/>
         </a>
 
-        <a href="#">
+        <a href="#" target="_blank" rel="noreferrer">
         <FaEnvelope/>
         </a>
 
