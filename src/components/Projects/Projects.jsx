@@ -1,51 +1,67 @@
-import "./Projects.css"
+import "./Projects.css";
 
-function Projects(){
-  return(
+import { FaGithub } from "react-icons/fa";
+
+import { FaExternalLinkAlt } from "react-icons/fa";
+
+function Projects() {
+  return (
     <section className="project" id="projects">
       <div className="project-container">
-        <h2 className="project-title">
-          Featured Projects
-        </h2>
+        <h2 className="project-title">Featured Projects</h2>
 
         <p className="project-subtitle">
-          A collection of modern MERN Stack and AI-based applications that showcase my skills in full-stack development, problem-solving, and building real-world solutions.
+          A collection of modern MERN Stack and AI-based applications that
+          showcase my skills in full-stack development, problem-solving, and
+          building real-world solutions.
         </p>
 
         <div className="project-grid">
           {projects.map((project) => (
             <div className="project-card" key={project.id}>
-             
-              <div className="project-image">
-                Project Image
-              </div>
-             
+              <div className="project-image">Project Image</div>
+
               <h3>{project.title}</h3>
-             
+
               <p>{project.description}</p>
               <div className="tech-stack">
-              {project.tech.map((tech, index)=>(
-                <span className="tech-badge" key={index}>
-                  {tech}
-                </span>
-              ))}
+                {project.tech.map((tech, index) => (
+                  <span className="tech-badge" key={index}>
+                    {tech}
+                  </span>
+                ))}
               </div>
 
-              
+              <div className="project-buttons">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn github-btn"
+                >
+                  <FaGithub /> GitHub
+                </a>
+
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn live-btn"
+                >
+                  <FaExternalLinkAlt /> Live Demo
+                </a>
+              </div>
             </div>
-          
           ))}
         </div>
-      
-        </div>
-
+      </div>
     </section>
   );
 }
 
-const projects =[
+const projects = [
   {
-   id: 1,
+    id: 1,
     title: "URL Shortener",
     description:
       "A modern URL Shortener with authentication, QR code generation, and click analytics.",
@@ -83,6 +99,6 @@ const projects =[
     github: "#",
     live: "#",
   },
-] ;
+];
 
 export default Projects;
