@@ -41,7 +41,7 @@ function About() {
 
       <div>
         <span>Skill : </span> 
-        <p>HTML, CSS, JavaScript, Node.js, React, Mongodb, Talewind, PHP, MySql</p>
+        <p>HTML, CSS, JavaScript, Node.js, React, Mongodb, Tailwind, PHP, MySql</p>
       </div>
 
       <div>

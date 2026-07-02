@@ -12,7 +12,7 @@ function Hero() {
 
         <h2>Computer Instructor | Java Full Stack Developer</h2>
 
-        <p>Passionate Computer Instructor with knowlegde of JAVA, React, HTML, CSS and JavaScript. I enjoy buildiing modern web applications and continuously learninng new technologies.</p>
+        <p>Passionate Computer Instructor with knowledge of JAVA, React, HTML, CSS and JavaScript. I enjoy buildiing modern web applications and continuously learninng new technologies.</p>
 
         <div className="hero-buttons">
           <button className="btn-primary">Hire Me</button>

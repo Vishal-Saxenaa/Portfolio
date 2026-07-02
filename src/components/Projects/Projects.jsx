@@ -2,7 +2,7 @@ import "./Projects.css"
 
 function Projects(){
   return(
-    <section className="projects" id="projects">
+    <section className="project" id="projects">
       <div className="project-container">
         <h2 className="project-title">
           Featured Projects
@@ -12,7 +12,7 @@ function Projects(){
           A collection of modern MERN Stack and AI-based applications that showcase my skills in full-stack development, problem-solving, and building real-world solutions.
         </p>
 
-        <div className="projects-grid">
+        <div className="project-grid">
           {projects.map((project) => (
             <div className="project-card" key={project.id}>
              
@@ -22,8 +22,16 @@ function Projects(){
              
               <h3>{project.title}</h3>
              
-              <p>{project.discription}</p>
-            
+              <p>{project.description}</p>
+              <div className="tech-stack">
+              {project.tech.map((tech, index)=>(
+                <span className="tech-badge" key={index}>
+                  {tech}
+                </span>
+              ))}
+              </div>
+
+              
             </div>
           
           ))}
